@@ -1,6 +1,6 @@
 # Laboratorio 02 - Infraestructura como Código
 
-## Estructura del proyecto
+## Estructura de la tarea 
 
 ```
 lab02-infraestructura/
