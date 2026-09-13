@@ -121,7 +121,12 @@ docker compose up -d
 
 docker exec -it Confi_BD psql -U Piero -d Lab02_Infraestructura -c "SELECT * FROM estudiantes;"
 ```
-
+## Fuentes consultadas
+- https://docs.docker.com/engine/storage/volumes/
+- https://docs.docker.com/engine/storage/bind-mounts/
+- https://docs.docker.com/compose/compose-file/07-volumes/
+- https://hub.docker.com/_/postgres
+- https://hub.docker.com/r/nmatsui/hello-world-api
 
 ## Evidencia
 ![alt text](image.png)
