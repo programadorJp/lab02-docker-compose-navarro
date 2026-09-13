@@ -1,0 +1,37 @@
+services:
+  app1:
+    build: ./api
+    container_name: app1
+    ports:
+      - "3000:3000"
+    environment:
+      - MESSAGE=Prueba de mensaje
+
+  app2:
+    build: ./api
+    container_name: app2
+    ports:
+      - "3001:3000"
+    environment:
+      - MESSAGE=Prueba de mensaje 2
+    
+  app3:
+    build: ./api
+    container_name: app3
+    ports:
+      - "3002:3000"
+    environment:
+      - MESSAGE=Prueba de mensaje 3
+
+  db:
+    image: postgres
+    restart: always
+    container_name: Confi_BD
+    environment:
+      - POSTGRES_USER=Piero
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=Lab02_Infraestructura
+    volumes:
+      - postgres_data:/var/lib/postgresql    
+volumes:
+  postgres_data:
