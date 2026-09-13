@@ -24,7 +24,7 @@ services:
       - MESSAGE=Prueba de mensaje 3
 
   db:
-    image: postgres
+    image: postgres:16
     restart: always
     container_name: Confi_BD
     environment:
@@ -32,6 +32,6 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=Lab02_Infraestructura
     volumes:
-      - postgres_data:/var/lib/postgresql    
+      - postgres_data:/var/lib/postgresql/data    
 volumes:
   postgres_data:
